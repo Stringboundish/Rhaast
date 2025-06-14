@@ -106,6 +106,27 @@ li:active .desc {
     0 0 4px #8000ff;
   font-family: 'UnifrakturCook', cursive;
 }
+  <style>
+  details {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #800080;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    color: #ccc;
+  }
+
+  summary {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.4em;
+    color: #b76eff;
+    cursor: pointer;
+  }
+
+  details[open] {
+    box-shadow: 0 0 10px #80008088;
+  }
+</style>
 </style>
 </head>
 <body>
@@ -150,8 +171,8 @@ li:active .desc {
 </ul>
   </div>
 
-  <div class="section">
-    <h2>Backstory</h2>
+  <details class="section">
+    <summary>Backstory</summary>
     <p>There’s a saying in the Guild: “The world forgets the dead. The hunt never does.”
 Rhaast knows this too well.
 She was a promising hunter, trained under the Fifth Fleet during the early expeditions into the New World. Talented, charismatic, and dependable—she quickly became a reliable partner on multi-hunter missions, with a knack for reading monster behavior like a book she'd already read.
@@ -170,6 +191,6 @@ She’s not cold or detached. She laughs with others, eats at the canteen, train
 Rhaast isn’t trying to undo her fate. She’s trying to make this life count.
 She believes her curse—if it is one—exists so she can stop something bigger. Something that’s coming. Some monsters she hunts aren’t behaving naturally. The ecosystem is remembering her. The world is evolving in ways that even the Guild can’t explain.
 She doesn't know how many more chances she'll get. But this time, she won’t face it alone.</p>
-  </div>
+  </details>
 </body>
 </html>
